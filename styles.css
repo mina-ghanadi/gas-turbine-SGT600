@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+}
+.tags{
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    bottom: auto;
+    background-color: rgba(0, 45, 115, 0.85);
+    border-radius: 12px;
+   
+    width: 0px;
+    left: 15px;
+    
+    transition: all 0.2s;
+    
+    padding: 10px 0 32px;
+    
+    color: #f52222;
+}
