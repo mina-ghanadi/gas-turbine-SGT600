@@ -1,6 +1,41 @@
 body{
     text-align: center;
 }
+.texts{
+    padding: 20px;
+}
+.headings{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgb(0, 63, 71);
+}
+.button-1{
+    border: 1px rgb(17, 123, 155) solid;
+    border-radius: 10px;
+    display: block;
+    margin:30px auto;
+    padding:5px 7px;
+    background-color: rgb(17, 123, 155);
+    color: white;
+    font-size: 20px;
+    transition: all 200ms ease-in-out;
+}
+.button-1:hover{
+    background-color: white;
+    color:rgb(17, 123, 155) ;
+}
+.tag-buttons{
+    border: none;
+    border-bottom: 1px silver solid;
+    background-color: white;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color:rgb(4, 92, 119) ;
+    font-size: 18px;
+}
 .turbine-image{
     z-index: -1;
     position: relative;
@@ -29,4 +64,13 @@ body{
     transform: scale(1.05);
     color: rgb(51, 51, 51);
     cursor: pointer;
+    
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
