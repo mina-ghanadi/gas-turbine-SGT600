@@ -36,6 +36,7 @@ body{
     color:rgb(4, 92, 119) ;
     font-size: 18px;
 }
+
 .turbine-image{
     z-index: -1;
     position: relative;
@@ -78,4 +79,23 @@ footer{
     border-top: 1px silver solid;
     padding: 20px;
     text-align: center;
+}
+
+
+
+
+
+/* Basic training page-------------------------*/
+.basic-training-buttons{
+    padding: 5px;
+    font-size: 12px;
+    height: 30px;
+    margin-top: 5px;
+    border: 1px silver solid;
+    border-radius: 10px;
+    font-weight: 500;
+}
+a{
+    text-decoration: none !important;
+    
 }
