@@ -4,13 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gas Generator</title>
-    
+    <link rel="stylesheet" href="./gas-generator.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 </head>
 <body>
-    <h1>Gas Generator (GG)</h1>
-    <p>The gas generator generates a flow of pressurized hot gas, driving the power turbine.It is consist of 4 main parts: Inlet, Compressor, Cumbustion chamber and Compressor rotor.</p>
+     <!--Navbar-->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="pics/Color logo - no background.png" width="30%" style="display: inline;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Basic Training
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="#">Brochures</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Heading-->
+    <div class="row" style="background-color: rgb(17, 123, 155); height: 300px;">
+        <div class="col-lg-6"><h1 style="padding-top: 150px; text-align: center; color: white; font-size: 42px;">Gas Generator (GG)</h1></div>
+        <div class="col-lg-6"><img src="pics/GG-00.png" width="100%" style="padding-top: 20px;"/></div>
+
+    </div>
+    <div class="container">
+    <!--GG-->
+   
+    <p style="padding-top: 25px;">The gas generator generates a flow of pressurized hot gas, driving the power turbine.It is consist of 4 main parts: Inlet, Compressor, Cumbustion chamber and Compressor rotor.</p>
     
     <img src="pics/GG-1.png" title="general picture" width="40%"/><br/>
+    <h3>Gas generator by head groups (HG)</h3>
+    <p>siemens-energy determined Head Groups (HG) for each part of turbine, in order to be recogniosable by any body who want to work with SGT-600. It also help for supplying segments in installing and overhaul period</p>
+    <img src="pics/GG-0.png" title="general picture" width="70%"/><br/>
     <hr/>
    
     <h2>Inlet</h2>
@@ -36,7 +83,7 @@ The blades and vanes are coated for corrosion protection.
 
     </p>
     <hr/>
-    <h2>Compressor</h2>
+    <h2 class="com">Compressor</h2>
     <p>A 10 stage axial-flow compressor is used to compressed the air.
         The compressor consists of three major parts. Two low-pressure sections with two and three stages, respectively, and one high-pressure section with 5 stages.<br/>
         To control the air flow to the compressor, the engine equipped with 2 variable guide vane stages(stages 0 and 1). These are of the variable geometry type,actuated via a spindle control mechanism and a variable speed electric motor.<br/>
@@ -45,7 +92,7 @@ The blades and vanes are coated for corrosion protection.
     </p><br/>
     <img src="pics/GG-2.png" width="50%"/>
     <div id="compressorCaing">
-        <h3>Compressor Casing (HG 4250)</h3>
+        <h3 class="com">Compressor Casing (HG 4250)</h3>
         <p>This HG(head group) is the biggest stationery casing in the Gas generator and this casing is effecting many measurements during assembly. Mentioned HG has a role for acting as a cover for all inside parts and casings.<br/>
             HG 4250 is the place that bleed valves are assembling. And also base of IGV is assembled in this HG.
              this part is a casting part that should be machined properly. If you look to the Gas generator you will notify that many internal casings are assembled inside of this HG.<br/>
@@ -57,7 +104,7 @@ The blades and vanes are coated for corrosion protection.
             <img src="pics/GG-3.jpg" width="40%" />
     </div>
     <div id="frontCompressorCarrier">
-        <h3>Front compressor carrier (HG 4251)</h3>
+        <h3 class="com">Front compressor carrier (HG 4251)</h3>
         <p>Gas Generator is a axial compressor, it means that you should have some rotary blades and also stationary vanes. This HG is the basement for first 3 stages of the compressor.<br/>
             This HG has two types of vanes, fixed vanes that known as CGV, and variable vanes that known as VGV. this VGV vanes works with actuator, this combination make IGV system. That its is very important during change of speed of the rotor or avoiding of purge in the compressor.<br/>
             Also remember that after some ours of running of engine you have to check tip clearance of blades with this casing with using filler gauge.<br/>
@@ -66,7 +113,7 @@ The blades and vanes are coated for corrosion protection.
         <img src="pics/GG-4.png" width="40%"/>
     </div>
     <div id="CenterCompressorCarrier">
-        <h3>Center compressor carrier (HG 4252)</h3>
+        <h3 class="com">Center compressor carrier (HG 4252)</h3>
         <p>After HG 4251, this HG is located, and stages 3,4,5 of the fixed vanes are assembled . Tip clearance of blades and casing is little tighter that HG4251.<br/>
             Another important matter for this HG is connecting type with the HG 4250. this part its not direct bolted to HG4250, by using 3 ex center shafts , this HG connect to the HG4250. this ex center shafts can align casing with rotor. So after some hours of working of Gas Turbine you should measure tip clearance and align this casing with the rotor.<br/>
             All of the vanes are fixed to the casing in this HG. And there is not any IGV system in this casing. <br/>
@@ -76,7 +123,7 @@ The blades and vanes are coated for corrosion protection.
         <img src="pics/GG-5.png" width="40%"/>
     </div>
     <div id="rearCompressorCarrier" >
-        <h3>Rear compressor carrier (HG 4253)</h3>
+        <h3 class="com">Rear compressor carrier (HG 4253)</h3>
         <p>Last part of the compressor internal casings is HG4253. and after it, we have hot section parts. Stages 6,7,8 ,9,10 are located in this HG. And connection with the Hg 4250 is ex center shafts.<br/>
             Tip clearance between rotor blades and casing here is minimum value and if you have vibration in the rotor out of controlled value , you can see sign of this value as scratching of casing here. .<br/>
             
@@ -88,7 +135,7 @@ The blades and vanes are coated for corrosion protection.
    
     </div>
     <div id="bleedValves">
-        <h3>Bleed Valves (HG 5261)</h3>
+        <h3 class="com">Bleed Valves (HG 5261)</h3>
         <p>In compressor some times you need to manage volume of the air . So you need to have valves that let the air goes out from compressor system.<br/>
             For this manner in SGT 600 we have two bleed valves, one of the working as  open or close valve, but another is a controllable valve.<br/>
             
@@ -99,9 +146,9 @@ The blades and vanes are coated for corrosion protection.
         <img src="pics/GG-7.png" width="50%"/>
     </div>
     <hr/>
-    <h2>Combustion Chamber</h2>
+    <h2 class="cc">Combustion Chamber</h2>
     <div id="CentralCasing">
-        <h3>Central casing (HG 4310)</h3>
+        <h3 class="cc">Central casing (HG 4310)</h3>
         <p>This HG(Head group) is one of the critical casings in the Gas generator. From one side this HG is start of hot part of turbine. Combustion chamber is located in one side of this HG. Also bearing No 2 that is very sensitive also will assemble in this HG. <br/>
             Even rotor will assemble from inside of this HG and all of sealing component for bearing No2 is located in This HG. <br/>
             
@@ -113,7 +160,7 @@ The blades and vanes are coated for corrosion protection.
         <img src="pics/GG-8.png" width="40%" />
     </div>
     <div id="TurbineBearing">
-        <h3>Turbine bearing</h3>
+        <h3 class="cc">Turbine bearing (HG 4222)</h3>
         <p>This HG is bearing No2 of gas turbine. As you know bearing No 2 in Siemens SGT600 gas turbine is a very critical part. Nominal pressure of oil is about 14 bar and speed of rotor is 9000 RPM.<br/>
 
             this bearing has special lubricating system, including boosting pumps and special oil tank. namely pressure of this Bearing is 14 bars. And huge volume of oil will pass this bearing. It means that lubricating line of this bearing is very special. Type of this bearing is anti frictional bearings that including pads, and it is journal bearing.<br/>
@@ -123,7 +170,7 @@ The blades and vanes are coated for corrosion protection.
         <img src="pics/GG-9.jpg" width="40%" />
     </div>
     <div id="injectors">
-        <h3>Injectors</h3>
+        <h3 class="cc">Injectors (HG 5051)</h3>
         <p>For running the gas Turbine we need to have fuel. This fuel should have needed pressure and also needed mass flow. This special mass flow is controlled by nozzles. <br>
             This nozzles are inside of this HG. Inside of HG 5051 there is two passage for main fuel and pilot fuels. <br>
             
@@ -136,7 +183,7 @@ The blades and vanes are coated for corrosion protection.
         <img src="pics/GG-10.png" width="40%" />
     </div>
     <div id="ignitionSystem">
-        <h3>Ignition system</h3>
+        <h3 class="cc">Ignition system (HG 5085)</h3>
         <p>After having mixture of fuel and air , we have to have ignition system for having good flame.
             This ignition system in including one structure and spark plug.  <br/>
             Now type of this ignition system is changed , in older Siemens Gas Turbines that mentioned structure was including one vessel for flame up. And two spark plugs that producing flame. And also in old version one flame detector was in top of ignition component. <br/>
@@ -148,7 +195,7 @@ The blades and vanes are coated for corrosion protection.
         <img src="pics/GG-11.png" width="40%" />
     </div>
     <div id="CombustionChamber">
-        <h3>Combustion chamber</h3>
+        <h3 class="cc">Combustion chamber (HG 5180)</h3>
         <p>The combustion chamber in gas turbines and jet engines (including ramjets and scramjets) is  called the combustor.
             The combustor is fed high pressure air by the compression system, adds fuel and burns the mix and feeds the hot, high pressure exhaust into the turbine components of the engine or out the exhaust nozzle.<br/>
             
@@ -159,6 +206,10 @@ The blades and vanes are coated for corrosion protection.
             Inside of combustion chamber is coated by special coating resistant ( thermal barrier coating)to high temperature.
             </p>
         <img src="pics/GG-12.png" width="40%" />
+    </div>
+
+
+    
     </div>
 </body>
 </html>
