@@ -4,45 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Power turbine</title>
+    <link rel="stylesheet" href="./gas-generator.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 </head>
 <body>
-    <h3>MBB Power Turbine System</h3>
-    <p>General description of the system 
-        The SGT-600 gas turbine operates in a simple open cycle with straight air and gas flow through the turbine. 
-        
-        It is divided into two main sections, the gas generator and the power turbine.
-        Dimensioning data
-Pressure ratio 3.52:1 at ISO-conditions
-Nominal speed 7700 rpm
-(MD speed	 3850  8085 rpm)
+     <!--Navbar-->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="pics/Color logo - no background.png" width="30%" style="display: inline;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Basic Training
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="#">Brochures</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Heading-->
+    <div class="row" style="background-color: rgb(17, 123, 155); height: 300px;">
+        <div class="col-lg-6"><h1 style="padding-top: 150px; text-align: center; color: white; font-size: 42px;">Power turbine (PT)</h1></div>
+        <div class="col-lg-6"><img src="pics/pt-1.png" width="80%" style="padding-top: 50px;"/></div>
 
-    </p>
-    <img src="" title=""/>
-    <h3>PT- rotor</h3>
-    <p>The power turbine rotor is solid, built up from two discs and a rotor shaft. The rotor is fully electron
-        beam welded. The PT blades are fitted in fir-tree grooves and have shrouds to minimize the 
-        interstage gas leakage. The rotor blades as well as the guide vanes are precision cast.
-        </p>
-    <img src="" title=""/>
-    <h3>PT- stator</h3>
-    <p>The PT stator carries two guide vane stages. The first guide vane stage is permanently adjustable to obtain optimum efficiency at various climate conditions. The vanes in the first stage are also hollow to transport cooling air to the turbine disc. 
-        The stator surfaces above the blade tips are provided with honeycomb seals. Honeycomb is an abradable seal, which can withstand a blade tip rubbing.
-        </p>
-    <img src="" title=""/>
-    <h3>Power Turbine casing (PT)</h3>
-    <p>The turbine casing houses the power turbine stages. The turbine casing is bolted to the diffusor casing. The purpose of the diffusor is to increasing the pressure ratio across the power turbine. The bearing housings are attached to the diffusor casing.
+    </div>
+    <div class="container">
+    <!--GG-->
+   
+    <p style="padding-top: 25px;">The power turbine converts the pressurized hot
+        gas flow from the gas generator to mechanical
+        energy, driving a load (in power generation via
+        a gearbox).</p>
+    
+    <img src="pics/pt-2.png" title="general picture" width="60%"/><br/>
+    
+    <hr/>
+   <!--Inlet-->
+    
+    <div id="frontPtBearing">
+     <h3 class="pt">Front PT bearing, no.3(HG 4224)</h3>
+     <p>This HG(head group) is containing bearing No3 in the power turbine . And it is a journal tilt pad bearing. Pressure of the supply oil is about 1 bar.<br/>
 
-        The exhaust casing surrounds the greater part of the diffusor casing and directs the exhaust gases to the outlet duct. The casing is designed to provide a minimum back pressure, which is important in order to not affect the power output. 
-        </p>
-    <img src="" title=""/>
-    <h3>Bearings</h3>
-    <p>The bearings are of tilting pad design with a directed lubrication system.
-        The bearings are equipped with temperature sensors and vibration transducers.
-        Two journal bearings, no. 3 and 4, numbered from the inlet to the exhaust carries the power turbine. Bearing no. 3 is a journal bearing and number 4 are a combined thrust and journal bearing.
-        </p>
-    <img src="" title=""/>
-    <h3></h3>
-    <p></p>
-    <img src="" title=""/>
+        Thermocouples for measuring Bearing No 3 is located in this bearing.
+        This bearing has a housing that this housing will assemble to the HG 5920.
+        </p><br/>
+     <img src="pics/pt-3.jpg" width="40%"/>
+    </div>
+    <hr/>
+    <div id="rearPtBearing">
+        <h3 class="pt">Rear PT bearing, no.4 (HG 4225)</h3>
+        <p>This HG is containing two bearings:<br/>
+            Trust bearing  for bearing No 4 <br/>
+            Journal bearing  for bearing No 4<br/>
+            When rotor start to make 25 megawatt, you will have a huge trust in bearing No4, and for damping this force there is one big trust bearing in this HG.
+            Also in this HG there is transducers for measuring axial displacement of Power turbine rotor
+            And if you look deeper in this HG, you will notify that temperature sensors for bearing No4, is assembled in journal pads of this bearing.
+            This bearing is directly assemble to the HG 5920
+            </p><br/>
+        <img src="pics/pt-4.jpg" width="40%"/>
+       </div>
+       <hr/>
+       <div id="ptDiffuser">
+        <h3 class="pt">PT diffuser (HG 5910)</h3>
+        <p>This HG(head group) is the biggest casing in the Siemens SGT600 gas turbine. And it is main part of the power turbine. <br/>
+            In this casing you have insulations for insulating heat. Both type of sheet metals and soft material. <br/>
+            
+            HG 5910 is basement of T7 thermocouple and  bearing No4 vibration sensor.
+            For cooling of guide vane stage 3 in HG 6010, there is one manifold that is belonging to HG 5910. <br/>
+            
+            This HG has two place for handling the gas turbine and also has one fix point that in the site some percent of weight of gas turbine will be in this fix point.
+            </p><br/>
+        <img src="pics/pt-5.png" width="40%"/>
+       </div>
+    <hr/>
+    <div id="ptInnerCasing">
+        <h3 class="pt">PT inner Casing (HG 5920)</h3>
+        <p>T
+            HG 5920 is the place of assembly of bearing no3 and 4. and also rotor through this HG will assemble.
+            And also this HG is basement of bearing No 3 and 4 vibration transducers. Speed and phase transducers. <br/>
+            This HG with 4 ex center shaft is assembled to HG 5910.
+            During assembly of this HG it important o know that center of this HG its not exactly ot the center of HG 5910. <br/>
+            This HG has both type of sheet metal insulation and soft material.
+            </p>
+            <img src="pics/pt-6.png" width="40%" />
+    </div>
+    <hr/>
+    <div id="ptRotor">
+        <h3 class="pt">PT rotor (HG 6000)</h3>
+        <p>One of the most important part of the power turbine is PT rotor. Bearing No 3 and No 4 are sited in this HG.
+            This HG has two disks that are welded to the main shaft. And in this disks, there is hot section blades.<br/>
+            In the end of the rotor there is a coupling that will connect to the flexible coupling of compressor.
+            This rotor its not hollow shaft , so it means that it is very heavy.<br/>
+            Rotor during running of the unit will have axial movement that this movement and force will damp with bearing No4
+            </p>
+        <img src="pics/pt-7.png" width="40%"/>
+    </div>
+    <hr/>
+
+    <div id="vane3And4" >
+        <h3 class="pt">Guide vane Carrier 3 and 4 (HG 6010)</h3>
+        <p>This part its including two main parts:<br/>
+            Guide vane carrier stage 3<br/>
+            Guide vane stage 4<br/>
+            HG6010 is assembled to the HG 5910 and it is a hot part in the power turbine. For cooling vanes belonging to stage 3 there is special cooling manifold that this manifold is located in HG 5910, and from this manifold there is many metal hoses that will connect to the HG 6010 and will cooling guide vane stage 3
+             </p>
+        <img src="pics/pt-8.jpg" width="30%">
+   
+    </div>
+   
+    
+    </div>
 </body>
 </html>
