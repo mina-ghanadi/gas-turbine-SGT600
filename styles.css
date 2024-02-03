@@ -99,3 +99,12 @@ a{
     text-decoration: none !important;
     
 }
+.layout{
+    font-size: 25px;
+    color: rgb(114, 114, 3);
+    padding-top: 30px;
+}
+.layout-pics{
+    display: block;
+    margin: 0 auto;
+}
