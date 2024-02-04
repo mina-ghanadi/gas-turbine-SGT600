@@ -125,28 +125,7 @@ footer{
 
 
 
-/*a{
-    text-decoration: none !important;
-    transition: all 2s;
-}
-a::after{
-    text-align: left;
-  content: '.';
-  margin: 0;
-  opacity: 0;
-}
-a:hover{
-    color: #fff;
-    z-index: 1;
-}
-a:hover::after{
-    z-index: -10;
-    animation: fill 1s forwards;
-    -webkit-animation: fill 1s forwards;
-    -moz-animation: fill 1s forwards;
-    opacity: 1;
-}
-*/
+
 .layout{
     font-size: 25px;
     color: rgb(114, 114, 3);
@@ -155,4 +134,14 @@ a:hover::after{
 .layout-pics{
     display: block;
     margin: 0 auto;
+}
+
+
+footer{
+    color: white;
+}
+footer a{
+    text-decoration: none !important;
+    color: white !important;
+    transition: all 200ms ease-in-out;
 }

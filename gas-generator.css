@@ -1,6 +1,12 @@
+body{
+    text-align: center;
+}
 img{
     display: block;
     margin: 0 auto;
+}
+.logo{
+    display: inline !important;
 }
 h1,h3{
     padding-top: 25px;
@@ -20,4 +26,13 @@ h1,h3{
 }
 .pt{
     color: green !important;
+}
+
+footer{
+    color: white;
+}
+footer a{
+    text-decoration: none !important;
+    color: white !important;
+    transition: all 200ms ease-in-out;
 }
