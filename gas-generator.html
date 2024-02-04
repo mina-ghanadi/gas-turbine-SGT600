@@ -13,38 +13,39 @@
      <!--Navbar-->
      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="pics/Color logo - no background.png" width="30%" style="display: inline;"></a>
+          <a class="navbar-brand" href="#"><img class="logo"src="pics/Color logo - no background.png" width="30%"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Basic Training
+                  Training
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="basic-concept.html">Basic concept</a></li>
+                  <li><a class="dropdown-item" href="basic-training.html">Basic training</a></li>
+                  <li><a class="dropdown-item" href="gas-generator.html">Gas Generator</a></li>
+                  <li><a class="dropdown-item" href="power-turbine.html">Power Turbine</a></li>
                 </ul>
               </li>
              
               <li class="nav-item">
-                <a class="nav-link" href="#">Brochures</a>
+                <a class="nav-link" href="layouts.html">Layouts</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     <!--Heading-->
-    <div class="row" style="background-color: rgb(17, 123, 155); height: 300px;">
+    <div class="row" style="background-color: rgb(17, 123, 155); height: 320px;">
         <div class="col-lg-6"><h1 style="padding-top: 150px; text-align: center; color: white; font-size: 42px;">Gas Generator (GG)</h1></div>
         <div class="col-lg-6"><img src="pics/GG-00.png" width="100%" style="padding-top: 20px;"/></div>
 
@@ -60,7 +61,7 @@
     <img src="pics/GG-0.png" title="general picture" width="70%"/><br/>
     <hr/>
    <!--Inlet-->
-    <h2 class="Inlet">Inlet</h2>
+    <h2 id="inlet1" class="Inlet">Inlet</h2>
     <div id="inletPiece">
      <h3 class="Inlet">Inlet piece (HG 4210)</h3>
      <p>This HG is a very important part of the turbine. Because basement of bearing No1 is inside of this HG. And also air will goes inside the machine from this HG. <br/>
@@ -109,7 +110,7 @@
        </div>
     <hr/>
     <!--Compressor-->
-    <h2 class="com">Compressor</h2>
+    <h2 id="compressor"class="com">Compressor</h2>
     <p>A 10 stage axial-flow compressor is used to compressed the air.
         The compressor consists of three major parts. Two low-pressure sections with two and three stages, respectively, and one high-pressure section with 5 stages.<br/>
         To control the air flow to the compressor, the engine equipped with 2 variable guide vane stages(stages 0 and 1). These are of the variable geometry type,actuated via a spindle control mechanism and a variable speed electric motor.<br/>
@@ -172,7 +173,7 @@
         <img src="pics/GG-7.png" width="50%"/>
     </div>
     <hr/>
-    <h2 class="cc">Combustion Chamber</h2>
+    <h2 id="cc"class="cc">Combustion Chamber</h2>
     <div id="CentralCasing">
         <h3 class="cc">Central casing (HG 4310)</h3>
         <p>This HG(Head group) is one of the critical casings in the Gas generator. From one side this HG is start of hot part of turbine. Combustion chamber is located in one side of this HG. Also bearing No 2 that is very sensitive also will assemble in this HG. <br/>
@@ -234,8 +235,8 @@
         <img src="pics/GG-12.png" width="40%" />
     </div>
 <hr/>
-   <h2 class="ct">Compressor Turbine (CT)</h2>
-   <div>
+   <h2 id="ct"class="ct">Compressor Turbine (CT)</h2>
+   <div id="turbineCasing">
     <h3 class="ct">Turbine Casing (HG 5850)</h3>
     <p>Name of this HG is Turbine Casing and covers turbine of gas generator and also combustion chamber. And also in the end of this HG there is a big flange that this flange is place of assembly of Power turbine.<br/>
         All of the flame detectors and also ignition system are assemble in this casing. Body of this casing is including forged parts and huge welding.<br/>
@@ -245,7 +246,7 @@
         </p><br/>
     <img src="pics/ct-1.png" width="30%" />
    </div>
-   <div>
+   <div id="turbineStator">
     <h3 class="ct">Turbine Stator( HG 5900)</h3>
     <p>This HG is including two parts:<br/>
         Guide vane stage 1<br/>
@@ -258,5 +259,9 @@
 
     
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
