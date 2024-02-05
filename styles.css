@@ -146,3 +146,26 @@ footer a{
     color: white !important;
     transition: all 200ms ease-in-out;
 }
+
+@media (max-width: 1000px) {
+    .heading-img{
+        display: none;
+    }
+    .heading-title{
+        height: 100px;
+    }
+    p{
+        text-align: justify;
+    }
+ img{
+    width: 90%;
+ }
+ .footer1{
+    display: none;
+ }
+.footer2{
+    display: block;
+    margin: 0 auto;
+}
+   
+    }
