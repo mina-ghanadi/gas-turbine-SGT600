@@ -1,6 +1,9 @@
 body{
     text-align: center;
 }
+.container1{
+    padding: 20px;
+}
 .texts{
     padding: 20px;
 }
