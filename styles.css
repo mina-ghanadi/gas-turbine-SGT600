@@ -165,7 +165,7 @@ footer a{
         text-align: justify;
     }
  img{
-    width: 90%;
+    width: 100%;
  }
  .footer1{
     display: none;
@@ -174,5 +174,11 @@ footer a{
     display: block;
     margin: 0 auto;
 }
-   
+
     }
+@media (max-width: 700px){
+    .turbine-parts-basic-training{
+        display: none !important;
+       }
+       
+}
